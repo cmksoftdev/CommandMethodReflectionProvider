@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="Button" HorizontalAlignment="Left" Height="53" Margin="165,118,0,0" VerticalAlignment="Top" Width="209"
+                Command="{Binding MyProperty.Command}"
+                CommandParameter="*method,flo=12.3,cha=b,ref=Test"/>
+
+        <Button Content="Button2" HorizontalAlignment="Left" Height="53" Margin="165,176,0,0" VerticalAlignment="Top" Width="209"
+                Command="{Binding MyProperty.Command}"
+                CommandParameter="Method2"/>
+
+        <Button Content="Button3" HorizontalAlignment="Left" Height="53" Margin="165,234,0,0" VerticalAlignment="Top" Width="209"
+                Command="{Binding MyProperty.Command}"
+                CommandParameter="Method3"/>
+
+    </Grid>
+</Window>
